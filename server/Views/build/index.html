@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xác thực Email</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+    .card {
+      border-radius: 10px;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 40%;
+    }
+    .icon {
+      font-size: 64px;
+      margin-bottom: 20px;
+    }
+    .success {
+      color: green;
+    }
+    .showBtn {
+      display: inline-block;
+      text-align: center;
+      border-radius: 5px;
+      padding: 10px 20px;
+      background-color: rgba(1, 116, 210, 0.971);
+      color: white;
+      margin-top: 10px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div id="emailVerification" class="card">
+    <div class="icon">
+      <span id="statusIcon">✔️</span>
+    </div>
+    <div id="statusMessage" class="success">
+      You have successfully authenticated your email. Click the button below to log in.
+    </div>
+    <a href="http://localhost:3000/login" class="showBtn" id="btnLogin">Login</a>
+  </div>
+</body>
+</html>
